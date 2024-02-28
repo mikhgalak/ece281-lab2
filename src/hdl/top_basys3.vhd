@@ -82,10 +82,10 @@ architecture top_basys3_arch of top_basys3 is
 component sevenSegDecoder is
       Port ( i_D : in STD_LOGIC_VECTOR (3 downto 0);
              o_S : out STD_LOGIC_VECTOR (6 downto 0));
-  end component;
+  end component sevenSegDecoder;
 
   -- create wire to connect button to 7SD enable (active-low)
-  signal w_7SD_En_n : std_logic
+  signal w_7SD_En_n : std_logic;
   
 begin
 	-- PORT MAPS ----------------------------------------
@@ -94,20 +94,20 @@ begin
 	-----------------------------------------------------	
 	sevenSegDecoder_inst : sevenSegDecoder port map(
 	
-	i_D(0) => w_sw(0),
-	i_D(1) => w_sw(1),
-	i_D(2) => w_sw(2),
-	i_D(3) => w_sw(3),
+	i_D(0) => sw(0),
+	i_D(1) => sw(1),
+	i_D(2) => sw(2),
+	i_D(3) => sw(3),
 	
-	o_S(0) => w_Sa,
-	o_S(1) => w_Sb,
-	o_S(2) => w_Sc,
-	o_S(3) => w_Sd,
-	o_S(4) => w_Se,
-	o_S(5) => w_Sf,
-	o_S(6) => w_Sg,
+	o_S(0) => seg(0),
+	o_S(1) => seg(1),
+	o_S(2) => seg(2),
+	o_S(3) => seg(3),
+	o_S(4) => seg(4),
+	o_S(5) => seg(5),
+	o_S(6) => seg(6)
 
-
+);
 
 	
 	-- CONCURRENT STATEMENTS ----------------------------
