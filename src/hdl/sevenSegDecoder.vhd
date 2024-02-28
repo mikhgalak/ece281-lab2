@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+-- Company: USAFA
+-- Engineer: MIKHAIL V GALAKTIONOV
 -- 
 -- Create Date: 02/27/2024 06:21:08 PM
 -- Design Name: 
