@@ -65,6 +65,7 @@ c_Sb <= '1' when ( (i_D = x"5") or
                    (i_D = x"6") or
                    (i_D = x"B") or
                    (i_D = x"C") or
+                   (i_D = x"E") or
                    (i_D = x"F") ) else '0';
                    
 c_Sc <= '1' when ( (i_D = x"2") or
@@ -95,7 +96,6 @@ c_Sf <= '1' when ( (i_D = x"1") or
                    
 c_Sg <= '1' when ( (i_D = x"0") or
                    (i_D = x"1") or
-                   (i_D = x"5") or
                    (i_D = x"7") ) else '0';
                   
 
